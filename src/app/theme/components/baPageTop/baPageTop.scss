@@ -7,11 +7,11 @@
     background-color: $sidebar;
     position: fixed;
     z-index: 904;
-    box-shadow: 2px 0 3px rgba(0, 0, 0, 0.5);
+    box-shadow: -2px 0 3px rgba(0, 0, 0, 0.5);
     height: 66px;
     width: 100%;
     min-width: $resMin;
-    padding: 0 32px 0 40px;
+    padding: 0 40px 0 32px;
 
     .dropdown-toggle::after {
       display: none;
@@ -30,7 +30,7 @@
     font-size: 24px;
     font-family: $font-family;
     white-space: nowrap;
-    float: left;
+    float: right;
     outline: none !important;
     line-height: 60px;
 
@@ -44,14 +44,14 @@
   }
 
   .user-profile {
-    float: right;
+    float: left;
     min-width: 230px;
     margin-top: 10px;
   }
 
   .al-user-profile {
-    float: right;
-    margin-right: 12px;
+    float: left;
+    margin-left: 12px;
     transition: all .15s ease-in-out;
     padding: 0;
     width: 36px;
@@ -61,7 +61,7 @@
     position: relative;
     ul.profile-dropdown:after {
       bottom: 100%;
-      right: 0;
+      left: 0;
       border: solid transparent;
       content: " ";
       height: 0;
@@ -71,7 +71,7 @@
       border-color: rgba(255, 255, 255, 0);
       border-bottom-color: #fff;
       border-width: 10px;
-      margin-right: 28px;
+      margin-left: 28px;
     }
     a {
       display: block;
@@ -88,9 +88,9 @@
     font-size: 13px;
     text-decoration: none;
     font-weight: $font-normal;
-    float: right;
+    float: left;
     margin-top: 13px;
-    margin-right: 26px;
+    margin-left: 26px;
 
     &:hover {
       color: $warning !important;
@@ -105,8 +105,8 @@
     line-height: 42px;
     color: $sidebar-text;
     padding: 0;
-    float: left;
-    margin: 11px 0 0 25px;
+    float: right;
+    margin: 11px 25px 0 0;
 
     &:hover {
       text-decoration: none;
@@ -115,9 +115,9 @@
   }
 
   .al-skin-dropdown {
-    float: right;
+    float: left;
     margin-top: 14px;
-    margin-right: 26px;
+    margin-left: 26px;
 
     .tpl-skin-panel {
       max-height: 300px;
@@ -142,8 +142,8 @@
     white-space: nowrap;
     overflow: hidden;
     width: 162px;
-    float: left;
-    margin: 20px 0 0 30px;
+    float: right;
+    margin: 20px 30px 0 0;
 
     label {
       cursor: pointer;
@@ -152,9 +152,9 @@
       width: 16px;
       display: inline-block;
       cursor: pointer;
-      padding-left: 1px;
+      padding-right: 1px;
       font-size: 16px;
-      margin-right: 13px;
+      margin-left: 13px;
     }
     input {
       color: $sidebar-text;
@@ -163,7 +163,7 @@
       outline: none;
       width: 120px;
       padding: 0;
-      margin: 0 0 0 -3px;
+      margin: 0 -3px 0 0;
       height: 27px;
     }
   }
@@ -185,10 +185,10 @@
       min-width: 136px;
     }
     a.refresh-data {
-      margin-right: 10px;
+      margin-left: 10px;
     }
     a.collapse-menu-link {
-      margin-left: 10px;
+      margin-right: 10px;
     }
 
     .al-skin-dropdown {

@@ -16,17 +16,17 @@
 }
 
 .al-msg-center {
-  float: right;
+  float: left;
   padding: 0;
   list-style: none;
-  margin: 13px 47px 0 0;
+  margin: 13px 0 0 47px;
 
   li {
     list-style: none;
-    float: left;
-    margin-left: 30px;
+    float: right;
+    margin-right: 30px;
     &:first-child {
-      margin-left: 0;
+      margin-right: 0;
     }
     & > a {
       color: $sidebar-text;
@@ -47,7 +47,7 @@
         background-color: $danger;
         position: absolute;
         top: -5px;
-        right: -14px;
+        left: -14px;
         font-size: 11px;
       }
       .notification-ring {
@@ -57,7 +57,7 @@
         width: 40px;
         position: absolute;
         top: -18px;
-        right: -27px;
+        left: -27px;
         animation: pulsate 8s ease-out;
         animation-iteration-count: infinite;
         opacity: 0.0
@@ -91,11 +91,11 @@
 
 @media (max-width: $resXXS) {
   .al-msg-center {
-    margin-right: 20px;
+    margin-left: 20px;
     li {
-      margin-left: 20px;
+      margin-right: 20px;
       &:first-child {
-        margin-left: 0;
+        margin-right: 0;
       }
     }
   }
@@ -105,13 +105,13 @@
   display: inline-block;
   padding: 0;
   font-size: 13px;
-  margin: 0 0 0 6px;
+  margin: 0 6px 0 0;
 }
 
 .top-dropdown-menu {
   width: 316px;
-  left: auto;
-  right: -47px;
+  right: auto;
+  left: -47px;
   top: 26px;
   @include scrollbars(.4em, rgba(0,0,0,0.5), #fff);
   .header {
@@ -119,12 +119,12 @@
     border-bottom: 1px solid $default;
     font-size: 12px;
     strong {
-      float: left;
+      float: right;
       color: $dropdown-text;
     }
     & > a {
-      float: right;
-      margin-left: 12px;
+      float: left;
+      margin-right: 12px;
       text-decoration: none;
       &:hover {
         color: $dropdown-text;
@@ -146,7 +146,7 @@
         border-top: none;
       }
       .img-area {
-        float: left;
+        float: right;
         width: 36px;
         img {
           width: 36px;
@@ -174,7 +174,7 @@
         }
       }
       .msg-area {
-        float: right;
+        float: left;
         width: 230px;
         div {
           max-height: 34px;
@@ -183,7 +183,7 @@
         }
         span {
           font-style: italic;
-          text-align: right;
+          text-align: left;
           display: block;
           font-size: 11px;
         }
@@ -208,32 +208,32 @@
   &.profile-dropdown {
     width: 145px;
     top: 55px;
-    right: -25px;
+    left: -25px;
     a {
-      text-align: left;
+      text-align: right;
       border: none;
       text-decoration: none;
       color: $dropdown-text;
-      padding: 4px 16px 4px 20px;
+      padding: 4px 20px 4px 16px;
       &.signout {
         border-top: 1px solid $default;
       }
       i {
-        margin-right: 10px;
+        margin-left: 10px;
       }
       &:hover {
         background: #f4fcff;
       }
     }
     i.dropdown-arr {
-      right: 25px;
+      left: 25px;
     }
   }
 
   i.dropdown-arr {
     position: absolute;
     top: -22px;
-    right: 42px;
+    left: 42px;
     display: block;
     width: 0;
     height: 0;
@@ -241,8 +241,8 @@
     border-bottom-color: rgba(0, 0, 0, .15);
     &:after {
       top: -9px;
-      left: 0px;
-      margin-left: -10px;
+      right: 0px;
+      margin-right: -10px;
       content: " ";
       position: absolute;
       display: block;
@@ -256,9 +256,9 @@
 
 @media (max-width: 415px) {
   .top-dropdown-menu {
-    right: -81px;
+    left: -81px;
     i.dropdown-arr {
-      right: 75px;
+      left: 75px;
     }
   }
 }

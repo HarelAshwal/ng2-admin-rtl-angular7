@@ -120,7 +120,7 @@ button.btn.btn-inverse {
 
 .btn-with-icon {
   i {
-    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -163,7 +163,7 @@ button.btn.btn-inverse {
 }
 
 .btn .caret {
-  margin-left: 2px;
+  margin-right: 2px;
 }
 
 @mixin progressButtonColor($btnColor) {
@@ -182,7 +182,7 @@ button.btn.btn-inverse {
 
   &.progress-button-style-lateral-lines .progress-inner {
     border-color: darken($btnColor, 10);
-    background: 0 0;
+    background: 100% 0;
   }
 
   .progress {

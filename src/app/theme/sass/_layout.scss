@@ -1,12 +1,13 @@
 @import 'conf/conf';
 
-$left-space: $sidebar-width;
+$right-space: $sidebar-width;
 
 @include scrollbars(.5em, #d9d9d9, rgba(0, 0, 0, 0));
 
 html {
   position: relative;
   min-width: 320px;
+  direction:rtl;
 }
 
 html, body {
@@ -60,7 +61,7 @@ a {
 }
 
 .al-main {
-  margin-left: $left-space;
+  margin-right: $right-space;
   padding: 66px 0 34px 0;
   min-height: 500px;
   position: relative;
@@ -68,7 +69,7 @@ a {
 
 .al-footer {
   height: 34px;
-  padding: 0 18px 0 ($left-space + 20px);
+  padding: 0 ($right-space + 20px) 0 18px;
   width: 100%;
   position: absolute;
   display: block;
@@ -79,24 +80,24 @@ a {
 }
 
 .al-footer-main {
-  float: left;
-  margin-left: 15px;
+  float: right;
+  margin-right: 15px;
 }
 
 .al-copy {
-  float: left;
+  float: right;
 }
 
 .al-footer-right {
-  float: right;
-  margin-right: 12px;
+  float: left;
+  margin-left: 12px;
   i {
     margin: 0 4px;
     color: $danger;
     font-size: 12px;
   }
   a {
-    margin-left: 4px;
+    margin-right: 4px;
     color: $default-text;
     &:hover {
       color: $danger;
@@ -105,14 +106,14 @@ a {
 }
 
 .al-share {
-  margin: -6px 0 0 12px;
+  margin: -6px 12px 0 0x;
   padding: 0;
   list-style: none;
-  float: left;
+  float: right;
   li {
     list-style: none;
-    float: left;
-    margin-left: 16px;
+    float: right;
+    margin-right: 16px;
     i {
       cursor: pointer;
       transition: all 0.1s ease;
@@ -137,7 +138,7 @@ a {
 }
 
 .al-content {
-  padding: 8px 32px 8px 40px;
+  padding: 8px 40px 8px 32px;
 }
 
 @media screen and (max-width: $resXS) {
@@ -150,7 +151,7 @@ a {
   visibility: hidden;
   position: absolute;
   top: -9999px;
-  left: -9999px;
+  right: -9999px;
 }
 
 .icon-up, .icon-down {
@@ -182,7 +183,7 @@ a {
 }
 
 .content-panel {
-  padding-left: 22px;
+  padding-right: 22px;
   padding-top: 26px;
 }
 
@@ -190,7 +191,7 @@ a {
   .al-footer-right {
     float: none;
     margin-bottom: 19px;
-    margin-right: 0;
+    margin-left: 0;
   }
   .al-footer {
     height: 76px;

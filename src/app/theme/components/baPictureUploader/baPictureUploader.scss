@@ -26,7 +26,7 @@
     cursor: pointer;
     color: $primary;
     top: -11px;
-    right: -11px;
+    left: -11px;
     height: 26px;
     border-radius: 50%;
     &:before {
@@ -45,7 +45,7 @@
     text-decoration: none;
     position: absolute;
     bottom: -1px;
-    left: -1px;
+    right: -1px;
     line-height: 32px;
     text-align: center;
   }
@@ -61,7 +61,7 @@
   .loading {
     width: 100%;
     height: 100%;
-    left: 0;
+    right: 0;
     display: flex;
     position: absolute;
     justify-content: center;
@@ -81,7 +81,7 @@
     opacity: 0.6;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
 
     -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
     animation: sk-bounce 2.0s infinite ease-in-out;

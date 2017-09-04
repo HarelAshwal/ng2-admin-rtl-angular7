@@ -61,9 +61,9 @@ $text-color: #ffffff;
 
 a.forgot-pass {
   display: block;
-  text-align: right;
+  text-align: left;
   margin-bottom: -20px;
-  float: right;
+  float: left;
   z-index: 2;
   position: relative;
 }
@@ -111,9 +111,9 @@ a.forgot-pass {
     padding: 0;
     display: inline-block;
     li {
-      margin-left: 24px;
+      margin-right: 24px;
       &:first-child {
-        margin-left: 0;
+        margin-right: 0;
       }
       i {
         font-size: 24px;

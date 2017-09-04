@@ -56,7 +56,7 @@
 }
 
 select.form-control {
-  padding-left: 8px;
+  padding-right: 8px;
 }
 
 select.form-control:not([multiple]) option {
@@ -77,12 +77,12 @@ textarea.form-control {
       width: 100%;
     }
     label {
-      margin-right: 12px;
+      margin-left: 12px;
     }
   }
 
   button[type="submit"] {
-    margin-left: 12px;
+    margin-right: 12px;
   }
 }
 
@@ -163,16 +163,16 @@ textarea.form-control {
   }
 
   &.bootstrap-switch-animate .bootstrap-switch-container {
-    transition: margin-left .2s;
+    transition: margin-right .2s;
   }
 }
 
 .switches {
-  margin-left: -12px;
+  margin-right: -12px;
   margin-bottom: -12px;
   .switch-container {
-    float: left;
-    margin-left: 12px;
+    float: right;
+    margin-right: 12px;
     margin-bottom: 12px;
   }
 }
@@ -198,7 +198,7 @@ textarea.form-control {
 
 label.custom-radio {
   @padding-right: 0;
-  padding-left: 0;
+  padding-right: 0;
   margin-bottom: 0;
   & > input {
     height: 0;
@@ -231,7 +231,7 @@ label.custom-radio {
     line-height: 16px;
     font-weight: $font-light;
     cursor: pointer;
-    padding-left: 22px;
+    padding-right: 22px;
     width: 100%;
     &:before {
       cursor: pointer;
@@ -248,11 +248,11 @@ label.custom-radio {
       height: 16px;
       line-height: 14px;
       min-width: 16px;
-      margin-right: 6px;
+      margin-left: 6px;
       position: relative;
       top: 0;
-      margin-left: -22px;
-      float: left;
+      margin-right: -22px;
+      float: right;
     }
     &:hover {
       &:before {
@@ -360,7 +360,7 @@ label.custom-input-danger {
 .form-control-feedback {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 2;
   display: block;
   width: 34px;
@@ -372,7 +372,7 @@ label.custom-input-danger {
 
 .has-feedback {
   .form-control {
-    padding-right: 42.5px;
+    padding-left: 42.5px;
   }
   label ~ .form-control-feedback {
     top: 19px;
@@ -566,20 +566,20 @@ label.custom-input-danger {
 }
 
 .input-group > span.addon-left {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .input-group > span.addon-right {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .input-group-btn {
 
   &:not(:first-child) {
     > .btn, > .btn-group {
-      margin-left: 0;
+      margin-right: 0;
     }
   }
 
@@ -617,8 +617,8 @@ rating-inputs span {
 }
 
 label.custom-checkbox {
-  padding-right: 0;
   padding-left: 0;
+  padding-right: 0;
   margin-bottom: 0;
   & > input {
     height: 0;
@@ -651,7 +651,7 @@ label.custom-checkbox {
     line-height: 16px;
     font-weight: $font-light;
     cursor: pointer;
-    padding-left: 22px;
+    padding-right: 22px;
     width: 100%;
     &:before {
       cursor: pointer;
@@ -668,11 +668,11 @@ label.custom-checkbox {
       height: 16px;
       line-height: 14px;
       min-width: 16px;
-      margin-right: 6px;
+      margin-left: 6px;
       position: relative;
       top: 0;
-      margin-left: -22px;
-      float: left;
+      margin-right: -22px;
+      float: right;
     }
     &:hover {
       &:before {

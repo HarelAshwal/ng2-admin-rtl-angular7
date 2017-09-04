@@ -1,8 +1,8 @@
 @import '../../sass/conf/conf';
 
 $sidebar-scroll-width: 4px;
-$angle-left: '\f100';
-$angle-right: '\f101';
+$angle-right: '\f100';
+$angle-left: '\f101';
 
 @mixin default-sublist() {
   padding: 0;
@@ -24,7 +24,7 @@ $angle-right: '\f101';
       font-size: 13px;
       text-decoration: none;
       color: $sidebar-text;
-      padding-left: 52px;
+      padding-right: 52px;
       height: auto;
       line-height: 29px;
       &:hover {
@@ -46,7 +46,7 @@ $angle-right: '\f101';
   .al-sidebar {
     width: $sidebar-width;
     top: $top-height;
-    left: 0;
+    right: 0;
     z-index: 1001;
     display: block;
     min-height: 100%;
@@ -63,7 +63,7 @@ $angle-right: '\f101';
   }
 
   .al-sidebar-sublist .subitem-submenu-list {
-    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .subitem-submenu-link {
@@ -99,7 +99,7 @@ $angle-right: '\f101';
     &.ba-sidebar-item-expanded {
       > .al-sidebar-list-link {
         b {
-          transform: rotate(180deg);
+          transform: rotate(-180deg);
         }
       }
 
@@ -112,7 +112,7 @@ $angle-right: '\f101';
   a.al-sidebar-list-link {
     display: block;
     height: 42px;
-    padding-left: 18px;
+    padding-right: 18px;
     text-shadow: none;
     font-size: 13px;
     text-decoration: none;
@@ -128,7 +128,7 @@ $angle-right: '\f101';
       }
     }
     i {
-      margin-right: 18px;
+      margin-left: 18px;
       width: 16px;
       display: inline-block;
     }
@@ -141,7 +141,7 @@ $angle-right: '\f101';
       text-shadow: none;
       font-size: 18px;
       position: absolute;
-      right: 10px;
+      left: 10px;
       top: 12px;
       padding: 0;
       text-align: center;
@@ -153,7 +153,7 @@ $angle-right: '\f101';
   .slimScrollBar, .slimScrollRail {
     border-radius: 0 !important;
     width: $sidebar-scroll-width !important;
-    left: $sidebar-width - $sidebar-scroll-width;
+    right: $sidebar-width - $sidebar-scroll-width;
   }
 
   .al-sidebar-sublist {
@@ -165,7 +165,7 @@ $angle-right: '\f101';
     background: $primary;
     position: absolute;
     top: -150px;
-    left: $sidebar-width - $sidebar-scroll-width;
+    right: $sidebar-width - $sidebar-scroll-width;
     transition: all 0.5s ease;
     transition-property: top, height;
     height: 42px;

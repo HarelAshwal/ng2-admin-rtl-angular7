@@ -175,13 +175,13 @@ h5 {
     color: $warning-bg;
     line-height: 14px;
     font-size: 14px;
-    padding-left: 11px;
-    border-left: 4px solid $warning-bg;
-    margin-left: 13px;
+    padding-right: 11px;
+    border-right: 4px solid $warning-bg;
+    margin-right: 13px;
   }
 
   ul.blur, ol.blur {
-    padding-left: 13px;
+    padding-right: 13px;
     margin-bottom: 19px;
     list-style: none;
     padding-top: 1px;
@@ -189,7 +189,7 @@ h5 {
       margin-top: 5px;
       font-size: 14px;
       ul, ol {
-        padding-left: 20px;
+        padding-right: 20px;
         margin-bottom: 0;
         list-style: none;
       }
@@ -211,7 +211,7 @@ h5 {
     counter-reset: section;
     li {
       color: $warning-bg;
-      padding-left: 0;
+      padding-right: 0;
       line-height: 14px;
       position: relative;
       span {
@@ -219,15 +219,15 @@ h5 {
         display: block;
       }
       ol {
-        padding-left: 0;
-        margin-left: 12px;
+        padding-right: 0;
+        margin-right: 12px;
       }
       &:before {
         content: counters(section, ".") ".";
         counter-increment: section;
         width: 19px;
         position: absolute;
-        left: 0;
+        right: 0;
         top: 0;
         white-space: nowrap;
         overflow: hidden;
@@ -236,7 +236,7 @@ h5 {
     }
     & > li {
       span {
-        padding-left: 14px;
+        padding-right: 14px;
       }
     }
     ol {
@@ -246,7 +246,7 @@ h5 {
           width: 30px;
         }
         span {
-          padding-left: 27px
+          padding-right: 27px
         }
       }
       ol {
@@ -255,7 +255,7 @@ h5 {
             width: 40px;
           }
           span {
-            padding-left: 40px;
+            padding-right: 40px;
           }
         }
       }
@@ -283,11 +283,11 @@ p.small-text {
 .cols-two {
   margin-bottom: 50px;
   & > div {
-    float: left;
+    float: right;
     width: 350px;
-    margin-left: 40px;
+    margin-right: 40px;
     &:first-child {
-      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
@@ -295,11 +295,11 @@ p.small-text {
 .cols-three {
   margin-bottom: 50px;
   & > div {
-    float: left;
+    float: right;
     width: 222px;
-    margin-left: 40px;
+    margin-right: 40px;
     &:first-child {
-      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
