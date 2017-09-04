@@ -6,11 +6,11 @@
 
 Admin template made with :heart:  by [Akveo team](http://akveo.com/). Follow us on [Twitter](https://twitter.com/akveo_inc) to get the latest news about this template first!
 
-### Demo
+### RTL screenShot
 
-<a target="_blank" href="http://akveo.com/ng2-admin/"><img src="http://i.imgur.com/QK9AzHj.jpg" width="600" alt="Sky Blue"/></a>
+<img src="http://preview.ibb.co/gR8yzF/screenshot.jpg">
 
-<a target="_blank" href="http://akveo.com/ng2-admin/">Live Demo</a>
+<a target="_blank" href="http://akveo.com/ng2-admin/">Live LTR Demo</a>
 
 ## Angular 1.x version
 Here you can find Angular 1.x based version: [Blur Admin](http://akveo.github.io/blur-admin/)
