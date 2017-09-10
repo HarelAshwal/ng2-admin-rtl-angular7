@@ -18,10 +18,10 @@
       "option1": "Option 1"
     },
     "menu": {
-      "dashboard": "Dashboard",
-      "editors": "Editors",
+      "dashboard": "داشبورد",
+      "editors": "ویرایشگر متن",
       "ck_editor": "CKEditor",
-      "components": "Components",
+      "components": "کامپوننت ها",
       "tree_view": "Tree View",
       "charts": "Charts",
       "chartist_js": "Chartist.Js",
