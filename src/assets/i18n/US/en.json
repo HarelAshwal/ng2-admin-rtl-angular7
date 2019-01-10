@@ -18,8 +18,8 @@
       "option1": "Option 1"
     },
     "menu": {
-      "dashboard": "داشبورد",
-      "editors": "ویرایشگر متن",
+      "dashboard": "פגישות",
+      "editors": "משתמשים",
       "ck_editor": "CKEditor",
       "components": "کامپوننت ها",
       "tree_view": "Tree View",
