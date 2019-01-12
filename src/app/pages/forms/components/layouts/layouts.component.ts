@@ -9,7 +9,7 @@ export class Layouts {
 
   public defaultPicture = 'assets/img/theme/no-photo.png';
   public profile:any = {
-    picture: 'assets/img/app/profile/Nasta.png'
+    picture: 'assets/img/app/profile/klipa.png'
   };
   public uploaderOptions = {
     // url: 'http://website.com/upload'
